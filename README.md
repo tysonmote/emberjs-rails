@@ -38,6 +38,6 @@ The above template would be stored as `Ember.TEMPLATES.todo_item`.
 
 Add this to your Gemfile, preferably in the `:assets` gem group:
 
-    gem "emberjs-rails"
+    gem "emberjs-rails", :git => "git://github.com/stvp/emberjs-rails.git"
 
 Done. Go forth, grasshopper.
