@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "emberjs-rails"
 
   s.add_dependency "railties", ">= 3.2.0.beta", "< 5.0"
+  s.add_dependency "execjs"
 
   s.files        = `git ls-files`.split("\n")
-  s.executables  = `git ls-files`.split("\n").select{|f| f =~ /^bin/}
   s.require_path = 'lib'
 end

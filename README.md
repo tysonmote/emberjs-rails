@@ -1,22 +1,42 @@
 # emberjs-rails
 
-Ember.js for Rails 3.1+
+This gem provides Ember.js 0.9.3 to the Rails assert pipeline via `emberjs` or `emberjs-dev`. You can include them in other JS files:
 
-This gem provides Ember.js 0.9.3
+```js
+//= require emberjs
+```
 
-## Usage
+Or:
 
-The ususal asset pipeline biz-nass:
+```js
+//= require emberjs-dev
+```
 
-    //= require emberjs
+You can also include them via a regular ol' `javascript_include_tag` call:
 
-Or, an uncompressed version:
+```ruby
+javascript_include_tag( "emberjs" )
+```
 
-    //= require emberjs-dev
+## Precompiled templates
 
-### Installation
+`emberjs-rails` also allows you to precomile Handlebars templates and make them available to Ember. Create files with a "handlebars", "hjs", or "hb" extension inside of a `templates/` directory in any `assets/javascripts/` directory:
 
-Add this to your Gemfile:
+```
+app/assets/javascripts/templates/todo_item.js.handlebars
+```
+
+You can then access it like any other JavaScript asset:
+
+```ruby
+javascript_include_tag( "templates/todo_item" )
+```
+
+The above template would be stored as `Ember.TEMPLATES.todo_item`.
+
+## Installation
+
+Add this to your Gemfile, preferably in the `:assets` gem group:
 
     gem "emberjs-rails"
 
