@@ -16,23 +16,6 @@ You can also include them via a regular ol' `javascript_include_tag` call:
 
 ```ruby
 javascript_include_tag( "emberjs" )
-```
-
-## Precompiled templates
-
-`emberjs-rails` also allows you to precomile Handlebars templates and make them available to Ember. Create files with a "handlebars", "hjs", or "hb" extension inside of a `templates/` directory in any `assets/javascripts/` directory:
-
-```
-app/assets/javascripts/templates/todo_item.js.handlebars
-```
-
-You can then access it like any other JavaScript asset:
-
-```ruby
-javascript_include_tag( "templates/todo_item" )
-```
-
-The above template would be stored as `Ember.TEMPLATES.todo_item`.
 
 ## Installation
 
