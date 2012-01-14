@@ -16,6 +16,7 @@ You can also include them via a regular ol' `javascript_include_tag` call:
 
 ```ruby
 javascript_include_tag( "emberjs" )
+```
 
 ## Installation
 
