@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    emberjs-rails (0.2.0)
+    emberjs-rails (0.9.4)
       execjs
       railties (>= 3.2.0.beta, < 5.0)
 
