@@ -1,4 +1,4 @@
-require "emberjs-rails/version"
+require "emberjs/rails/version"
 
 module EmberJS
   module Rails
@@ -6,3 +6,4 @@ module EmberJS
     end
   end
 end
+
