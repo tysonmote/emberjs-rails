@@ -1,6 +1,6 @@
 # emberjs-rails
 
-This gem provides Ember.js 0.9.7.1 to the Rails assert pipeline. You can include it in a JS file:
+This gem provides Ember.js 0.9.8 to the Rails assert pipeline. You can include it in a JS file:
 
 ```js
 //= require emberjs
@@ -19,3 +19,4 @@ Add this to your Gemfile, preferably in the `:assets` gem group:
     gem "emberjs-rails", :git => "git://github.com/stvp/emberjs-rails.git"
 
 Done. Go forth, grasshopper.
+
